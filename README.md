@@ -3,9 +3,17 @@ This tool was created for automate process of make connections to  webshell by h
 for example, when there is a page webshell.php and the Header <b>User-Agent</b> is accepting 
 code execution in the server 
 
-and you can execute commands as in the the example:
+and you can execute commands as in the example:
 
-<b>User-Agent: ls </b>
+<br>
+GET /webshell.php HTTP/1.1<br>
+<b>User-Agent: ls </b> <br>
+Host: example.com <br>
+Accept-Language: en-us <br>
+Accept-Encoding: gzip, deflate <br>
+Connection: Keep-Alive <br>
+
+
 
 
 <h1>How to use</h1>
